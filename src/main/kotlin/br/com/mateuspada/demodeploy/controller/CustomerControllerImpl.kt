@@ -23,7 +23,7 @@ class CustomerControllerImpl : CustomerController {
             CustomerDatabase.customerList.add(customer)
             ResponseEntity(HttpStatus.CREATED)
         } else {
-            ResponseEntity(String, HttpStatus.BAD_REQUEST)
+            ResponseEntity(HttpStatus.BAD_REQUEST)
         }
 
     }
